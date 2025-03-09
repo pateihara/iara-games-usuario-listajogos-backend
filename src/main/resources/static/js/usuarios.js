@@ -89,7 +89,9 @@ function salvarUsuario(event) {
 function deletarUsuario(id) {
   if (confirm("Tem certeza que deseja excluir este usuário?")) {
     fetch(`${API_URL}/${id}`, { method: "DELETE" })
-      .then(() => carregarUsuarios())
+      .then(() => {
+        carregarUsuarios(); // Recarregar a lista de usuários após a exclusão
+      })
       .catch((error) => console.error("Erro ao excluir usuário:", error));
   }
 }

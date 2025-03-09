@@ -102,7 +102,9 @@ function salvarJogo(event) {
 function deletarJogo(id) {
   if (confirm("Tem certeza que deseja excluir este jogo?")) {
     fetch(`${API_URL}/${id}`, { method: "DELETE" })
-      .then(() => carregarJogos())
+      .then(() => {
+        carregarJogos(); // Recarregar a lista de jogos após a exclusão
+      })
       .catch((error) => console.error("Erro ao excluir jogo:", error));
   }
 }
