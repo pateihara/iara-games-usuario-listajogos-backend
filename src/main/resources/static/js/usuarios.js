@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8080/usuario"; // URL correta da API
+const API_URL =
+  "https://iara-games-usuario-listajogos-ba-production.up.railway.app/usuario";
 
 document.addEventListener("DOMContentLoaded", () => {
   carregarUsuarios();
