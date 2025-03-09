@@ -1,5 +1,5 @@
 const API_URL =
-  "https://iara-games-usuario-listajogos-ba-production.up.railway.app/jogo"; // URL do backend
+  "https://iara-games-usuario-listajogos-ba-production.up.railway.app/jogo";
 
 document.addEventListener("DOMContentLoaded", carregarJogos);
 document.getElementById("jogo-form").addEventListener("submit", salvarJogo);

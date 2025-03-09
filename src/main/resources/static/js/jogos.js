@@ -1,5 +1,5 @@
 const API_URL =
-  "https://iara-games-usuario-listajogos-ba-production.up.railway.app/jogo"; // URL correta da API
+  "https://iara-games-usuario-listajogos-ba-production.up.railway.app/jogo";
 
 document.addEventListener("DOMContentLoaded", () => {
   carregarJogos();
