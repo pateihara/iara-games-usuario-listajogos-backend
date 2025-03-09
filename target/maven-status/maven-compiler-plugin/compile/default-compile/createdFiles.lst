@@ -1,8 +1,0 @@
-br\com\iaragames\controller\JogoController.class
-br\com\iaragames\controller\UsuarioController.class
-br\com\iaragames\beans\Jogo.class
-br\com\iaragames\dao\UsuarioDao.class
-br\com\iaragames\dao\JogoDao.class
-br\com\iaragames\beans\Usuario.class
-br\com\iaragames\controller\HomeController.class
-br\com\iaragames\loja\LojaApplication.class
