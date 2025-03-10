@@ -7,21 +7,41 @@
     <title>Gerenciar Jogos</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/variables.css">
-    <link rel="stylesheet" href="/static/css/jogosstyles.css">
 
+    <!-- Correção dos caminhos para os arquivos CSS -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/jogosstyles.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-dark navbar-expand-lg fixed-top p-2 ">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top p-2 bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="navbar-logo"
-                        src="/static/images/brand/iara logo branco.svg" alt="Logotipo Iara Games" srcset=""></a>
-                <a href="index.html" class="btn btn-outline-secondary">Voltar para Home</a>
+                <a class="navbar-brand" href="/">
+                    <img class="navbar-logo" src="/images/brand/iara-logo-branco.svg" alt="Logotipo Iara Games">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="/jogos">Gerenciar Jogos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/usuarios">Gerenciar Usuários</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <div class="container mt-4">
+
+    <div class="container mt-5 pt-5">
         <h2 class="mt-4 text-left">Gerenciar Jogos</h2>
 
         <!-- Formulário para Adicionar/Editar Jogo -->
@@ -68,7 +88,9 @@
         </table>
     </div>
 
-    <script src="static/js/jogos.js"></script>
+    <!-- Correção do caminho do JS -->
+    <script src="/js/jogos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
